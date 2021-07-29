@@ -1,0 +1,7 @@
+---
+- hosts: Webserver
+  tasks:
+    - name: "Deploy on ec2 server"
+      copy:
+        src: /opt/webapp.war
+        dest: /opt/tomcat/apache-tomcat-8.5.69/webapps
